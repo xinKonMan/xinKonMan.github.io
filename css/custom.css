@@ -1,5 +1,3 @@
-
-
 /* 一级菜单居中 */
 #nav .menus_items {
     position: absolute !important;
@@ -15,5 +13,22 @@
 
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
 .menus_items .menus_item:nth-child(2) .menus_item_child {
-    left: -125px;
+    left: 150px;
+}
+
+/* 翻页按钮居中，解决文章双侧栏显示问题 */
+#pagination {
+    width: 100%;
+    margin: auto;
+}
+
+/* 夜间模式菜单栏发光字 */
+[data-theme="dark"] #nav .site-page,
+[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {
+  text-shadow: 0 0 2px #39c5bb !important;
+}
+
+/* 手机端适配 */
+[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {
+  text-shadow: 0 0 2px #39c5bb !important;
 }
